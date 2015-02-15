@@ -26,7 +26,9 @@ vec4 filter1(vec4 color) {
 	
 	float n = 0.5;
 	
-	
+	r = (color.r + uAudioFreq[8]) / 2.0;
+	g = (color.g + uAudioFreq[16]) / 2.0;
+	b = color.b + uAudioFreq[24] / 2.0;
 	
 	r = mod(r, 1.0001);
 	g = mod(g, 1.0001);
